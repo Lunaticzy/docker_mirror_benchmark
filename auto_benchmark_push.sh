@@ -6,7 +6,7 @@
 REPO_DIR="/home/lunatic/works/docker_mirror_benchmark"    # Git仓库的绝对路径
 PY_SCRIPT="main.py" # 要执行的Python脚本
 BRANCH="main"                          # 要推送的分支
-REMOTE="main"                        # 远程仓库名称
+REMOTE="origin"                        # 远程仓库名称
 LOG_FILE="${REPO_DIR}/cron.log"        # 日志文件路径
 
 # Git身份配置

@@ -1,5 +1,11 @@
 {
-  "registry-mirrors": [],
+  "registry-mirrors": [
+    "https://lispy.org",
+    "https://a.ussh.net",
+    "https://docker.1panel.live",
+    "https://docker.hlmirror.com",
+    "https://docker.xiaogenban1993.com"
+  ],
   "features": {
     "buildkit": true
   },

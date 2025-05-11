@@ -252,7 +252,7 @@ def generate_markdown_table(mirrors):
     return '\n'.join(table)
 
 # 添加新的生成README函数
-def generate_readme(ranked_mirrors):
+def generate_readme(ranked_mirrors, config):
     """生成包含速度排行的README.md"""
     readme_content = f"""# Docker Mirror Benchmark
 
@@ -266,12 +266,22 @@ def generate_readme(ranked_mirrors):
 ## 速度排行榜
 {generate_markdown_table(ranked_mirrors)}
 
+## 配置
+
+```json
+{json.dumps(config, indent=2)}
+```
+
 ## 配置说明
 生成的配置文件已包含以下优化策略：
 - 前5个最快镜像源
 - 日志配置优化
 
 """
+
+    with open('README.md', 'w', encoding='utf-8') as f:
+        f.write(readme_content)
+
 
 def main():
     auth_handler = RegistryAuth()
@@ -327,6 +337,8 @@ def main():
     print("🔄 请执行以下命令应用配置:")
     print(
         "sudo cp daemon.json /etc/docker/daemon.json && sudo systemctl daemon-reload && sudo systemctl restart docker")
+
+    generate_readme(valid_mirrors, config)
 
 if __name__ == "__main__":
     main()

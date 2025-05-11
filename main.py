@@ -90,7 +90,9 @@ def fetch_mirror_list():
             try:
                 availability = [float(tag.text.strip('%')) for tag in status_tags[:3]]
                 if min(availability) >= MIN_AVAILABILITY:
-                    mirrors.append(url_tag.text.strip())
+                    t = url_tag.text.strip()
+                    print(f"爬取到mirror: {t}")
+                    mirrors.append(t)
             except ValueError:
                 continue
 

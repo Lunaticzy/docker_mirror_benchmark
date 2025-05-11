@@ -11,7 +11,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 # 配置参数
-DEFAULT_MIRROR = "https://hub.docker.lnatic.icu"
+DEFAULT_MIRROR = "https://hub.docker.lunatic.icu"
 TEST_IMAGE = "library/nginx"
 TEST_TAG = "latest"
 TEST_ARCH = "amd64"
@@ -58,7 +58,8 @@ class RegistryAuth:
                 "service": auth_info.get('service', 'registry.docker.io'),
                 "scope": f"repository:{repository}:pull"
             }
-            resp = self.session.get(auth_info['realm'], params=params, timeout=5)
+            resp = self.session.get("https://auth.docker.lunatic.icu/token", params=params, timeout=5)
+            # resp = self.session.get(auth_info['realm'], params=params, timeout=5)
             resp.raise_for_status()
             token_data = resp.json()
 
@@ -107,7 +108,9 @@ def get_test_layer_digest(auth_handler):
     """获取用于测试的Layer摘要"""
     print("\n🔍 正在选择测试层...")
     try:
-        registry = "registry-1.docker.io"
+        # registry = "registry-1.docker.io"
+        registry = "hub.docker.lunatic.icu"
+
         repository = TEST_IMAGE
         tag = TEST_TAG
 

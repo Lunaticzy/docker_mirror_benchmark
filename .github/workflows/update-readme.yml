@@ -1,0 +1,40 @@
+name: Update Mirror Rankings
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # 每周一00:00 UTC运行
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: Install UV
+      run: |
+        curl -LsSf 'https://astral.sh/uv/install.sh' | sh
+        echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+    - name: Setup dependencies with UV
+      run: |
+        uv sync
+        echo "/opt/hostedtoolcache/Python/3.13.$(python -c 'import sys; print(sys.version_info.minor)')/$(ls /opt/hostedtoolcache/Python/3.11.$(python -c 'import sys; print(sys.version_info.minor)')/x64/ | grep -E '^lib')/site-packages" >> $GITHUB_PATH
+
+    - name: Run benchmark
+      run: |
+        uv run main.py
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add README.md daemon.json
+        git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M')" || echo "No changes to commit"
+        git push

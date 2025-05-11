@@ -1,11 +1,5 @@
 {
-  "registry-mirrors": [
-    "https://a.ussh.net",
-    "https://docker.xuanyuan.me",
-    "https://docker.hlmirror.com",
-    "https://docker.xiaogenban1993.com",
-    "https://docker.mybacc.com"
-  ],
+  "registry-mirrors": [],
   "features": {
     "buildkit": true
   },

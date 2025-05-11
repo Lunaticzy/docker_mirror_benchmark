@@ -95,7 +95,7 @@ def fetch_mirror_list():
                     mirrors.append(t)
             except ValueError:
                 continue
-        if mirrors:
+        if not mirrors:
             raise Exception("未获取到mirror")
         return [urlparse(m).geturl().rstrip('/') for m in mirrors]
     except Exception as e:

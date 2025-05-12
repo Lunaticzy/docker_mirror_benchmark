@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2025-05-11 19:49:37)
+🚀 自动生成的镜像源速度排行榜 (更新于 2025-05-12 23:09:20)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,27 +10,27 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `lispy.org` | 4.53 MB/s |
-| 2 | `a.ussh.net` | 4.52 MB/s |
-| 3 | `docker.1panel.live` | 3.74 MB/s |
-| 4 | `docker.hlmirror.com` | 3.04 MB/s |
-| 5 | `docker.xiaogenban1993.com` | 2.34 MB/s |
-| 6 | `docker.xuanyuan.me` | 2.14 MB/s |
-| 7 | `docker.mybacc.com` | 1.90 MB/s |
-| 8 | `docker.melikeme.cn` | 1.82 MB/s |
-| 9 | `docker-0.unsee.tech` | 1.55 MB/s |
-| 10 | `docker-mirror.aigc2d.com` | 0.71 MB/s |
+| 1 | `docker-0.unsee.tech` | 4.44 MB/s |
+| 2 | `lispy.org` | 4.00 MB/s |
+| 3 | `docker.xuanyuan.me` | 3.00 MB/s |
+| 4 | `docker.1panel.live` | 2.96 MB/s |
+| 5 | `docker.melikeme.cn` | 2.63 MB/s |
+| 6 | `a.ussh.net` | 1.81 MB/s |
+| 7 | `docker.hlmirror.com` | 1.72 MB/s |
+| 8 | `docker.xiaogenban1993.com` | 0.97 MB/s |
+| 9 | `docker-mirror.aigc2d.com` | 0.66 MB/s |
+| 10 | `docker.mybacc.com` | 0.06 MB/s |
 
 ## 配置
 
 ```json
 {
   "registry-mirrors": [
+    "https://docker-0.unsee.tech",
     "https://lispy.org",
-    "https://a.ussh.net",
+    "https://docker.xuanyuan.me",
     "https://docker.1panel.live",
-    "https://docker.hlmirror.com",
-    "https://docker.xiaogenban1993.com"
+    "https://docker.melikeme.cn"
   ],
   "features": {
     "buildkit": true

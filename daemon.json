@@ -1,10 +1,10 @@
 {
   "registry-mirrors": [
     "https://docker.1panel.live",
-    "https://docker.hlmirror.com",
+    "https://a.ussh.net",
     "https://lispy.org",
     "https://docker-0.unsee.tech",
-    "https://docker.melikeme.cn"
+    "https://docker.mybacc.com"
   ],
   "features": {
     "buildkit": true

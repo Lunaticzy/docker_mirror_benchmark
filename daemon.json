@@ -1,10 +1,10 @@
 {
   "registry-mirrors": [
-    "https://docker.hlmirror.com",
-    "https://docker.xuanyuan.me",
-    "https://docker.melikeme.cn",
     "https://lispy.org",
-    "https://a.ussh.net"
+    "https://a.ussh.net",
+    "https://docker-0.unsee.tech",
+    "https://docker.xuanyuan.me",
+    "https://docker.hlmirror.com"
   ],
   "features": {
     "buildkit": true

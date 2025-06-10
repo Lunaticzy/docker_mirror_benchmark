@@ -1,9 +1,9 @@
 {
   "registry-mirrors": [
-    "https://docker.hlmirror.com",
-    "https://lispy.org",
     "https://docker.melikeme.cn",
     "https://a.ussh.net",
+    "https://docker.1panel.live",
+    "https://docker.hlmirror.com",
     "https://docker.xuanyuan.me"
   ],
   "features": {

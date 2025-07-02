@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2025-07-02 03:01:58)
+🚀 自动生成的镜像源速度排行榜 (更新于 2025-07-03 03:00:28)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,24 +10,24 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `docker.1panel.live` | 5.09 MB/s |
-| 2 | `lispy.org` | 4.80 MB/s |
-| 3 | `docker.xuanyuan.me` | 4.33 MB/s |
-| 4 | `docker.hlmirror.com` | 4.31 MB/s |
-| 5 | `docker-0.unsee.tech` | 4.09 MB/s |
-| 6 | `docker.melikeme.cn` | 3.49 MB/s |
-| 7 | `docker-mirror.aigc2d.com` | 0.09 MB/s |
+| 1 | `docker.hlmirror.com` | 4.35 MB/s |
+| 2 | `lispy.org` | 3.49 MB/s |
+| 3 | `docker.xuanyuan.me` | 2.89 MB/s |
+| 4 | `docker.melikeme.cn` | 2.55 MB/s |
+| 5 | `docker.1panel.live` | 1.26 MB/s |
+| 6 | `docker-0.unsee.tech` | 0.79 MB/s |
+| 7 | `docker-mirror.aigc2d.com` | 0.61 MB/s |
 
 ## 配置
 
 ```json
 {
   "registry-mirrors": [
-    "https://docker.1panel.live",
+    "https://docker.hlmirror.com",
     "https://lispy.org",
     "https://docker.xuanyuan.me",
-    "https://docker.hlmirror.com",
-    "https://docker-0.unsee.tech"
+    "https://docker.melikeme.cn",
+    "https://docker.1panel.live"
   ],
   "features": {
     "buildkit": true

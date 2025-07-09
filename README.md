@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2025-07-09 03:00:31)
+🚀 自动生成的镜像源速度排行榜 (更新于 2025-07-10 03:00:31)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,26 +10,25 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `lispy.org` | 4.57 MB/s |
-| 2 | `docker.xiaogenban1993.com` | 4.32 MB/s |
-| 3 | `docker.1panel.live` | 4.08 MB/s |
-| 4 | `docker.melikeme.cn` | 3.93 MB/s |
-| 5 | `docker.xuanyuan.me` | 3.92 MB/s |
-| 6 | `docker.hlmirror.com` | 3.64 MB/s |
-| 7 | `docker.kejilion.pro` | 0.87 MB/s |
-| 8 | `docker-0.unsee.tech` | 0.85 MB/s |
-| 9 | `docker-mirror.aigc2d.com` | 0.59 MB/s |
+| 1 | `docker-0.unsee.tech` | 3.23 MB/s |
+| 2 | `docker.hlmirror.com` | 2.41 MB/s |
+| 3 | `hub.littlediary.cn` | 2.02 MB/s |
+| 4 | `docker.kejilion.pro` | 1.88 MB/s |
+| 5 | `docker.melikeme.cn` | 1.46 MB/s |
+| 6 | `docker.xuanyuan.me` | 1.19 MB/s |
+| 7 | `docker.1panel.live` | 1.10 MB/s |
+| 8 | `docker-mirror.aigc2d.com` | 0.62 MB/s |
 
 ## 配置
 
 ```json
 {
   "registry-mirrors": [
-    "https://lispy.org",
-    "https://docker.xiaogenban1993.com",
-    "https://docker.1panel.live",
-    "https://docker.melikeme.cn",
-    "https://docker.xuanyuan.me"
+    "https://docker-0.unsee.tech",
+    "https://docker.hlmirror.com",
+    "https://hub.littlediary.cn",
+    "https://docker.kejilion.pro",
+    "https://docker.melikeme.cn"
   ],
   "features": {
     "buildkit": true

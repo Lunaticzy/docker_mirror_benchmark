@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2025-07-12 03:02:30)
+🚀 自动生成的镜像源速度排行榜 (更新于 2025-07-13 03:00:27)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,24 +10,22 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `docker.hlmirror.com` | 4.49 MB/s |
-| 2 | `lispy.org` | 4.38 MB/s |
-| 3 | `docker-0.unsee.tech` | 4.24 MB/s |
-| 4 | `docker.melikeme.cn` | 2.56 MB/s |
-| 5 | `docker.kejilion.pro` | 0.74 MB/s |
-| 6 | `docker-mirror.aigc2d.com` | 0.64 MB/s |
-| 7 | `docker.1panel.live` | 0.07 MB/s |
+| 1 | `lispy.org` | 3.11 MB/s |
+| 2 | `docker.hlmirror.com` | 2.28 MB/s |
+| 3 | `docker.kejilion.pro` | 0.96 MB/s |
+| 4 | `docker-mirror.aigc2d.com` | 0.78 MB/s |
+| 5 | `docker-0.unsee.tech` | 0.69 MB/s |
 
 ## 配置
 
 ```json
 {
   "registry-mirrors": [
-    "https://docker.hlmirror.com",
     "https://lispy.org",
-    "https://docker-0.unsee.tech",
-    "https://docker.melikeme.cn",
-    "https://docker.kejilion.pro"
+    "https://docker.hlmirror.com",
+    "https://docker.kejilion.pro",
+    "https://docker-mirror.aigc2d.com",
+    "https://docker-0.unsee.tech"
   ],
   "features": {
     "buildkit": true

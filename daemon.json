@@ -1,5 +1,8 @@
 {
-  "registry-mirrors": [],
+  "registry-mirrors": [
+    "https://docker.367231.xyz",
+    "https://lispy.org"
+  ],
   "features": {
     "buildkit": true
   },

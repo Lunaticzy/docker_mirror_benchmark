@@ -1,5 +1,6 @@
 {
   "registry-mirrors": [
+    "https://docker.367231.xyz",
     "https://docker.1panel.live",
     "https://docker-mirror.aigc2d.com"
   ],

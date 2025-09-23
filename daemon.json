@@ -1,7 +1,8 @@
 {
   "registry-mirrors": [
-    "https://docker.367231.xyz",
     "https://docker.1panel.live",
+    "https://lispy.org",
+    "https://docker.367231.xyz",
     "https://docker-mirror.aigc2d.com"
   ],
   "features": {

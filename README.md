@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2025-10-04 03:00:25)
+🚀 自动生成的镜像源速度排行榜 (更新于 2025-10-05 03:00:24)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,11 +10,10 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `docker.1panel.live` | 4.45 MB/s |
-| 2 | `docker-0.unsee.tech` | 4.37 MB/s |
-| 3 | `docker.367231.xyz` | 3.86 MB/s |
-| 4 | `lispy.org` | 1.93 MB/s |
-| 5 | `docker-mirror.aigc2d.com` | 0.69 MB/s |
+| 1 | `docker.1panel.live` | 6.23 MB/s |
+| 2 | `lispy.org` | 4.73 MB/s |
+| 3 | `docker-0.unsee.tech` | 1.84 MB/s |
+| 4 | `docker-mirror.aigc2d.com` | 0.74 MB/s |
 
 ## 配置
 
@@ -22,9 +21,8 @@
 {
   "registry-mirrors": [
     "https://docker.1panel.live",
-    "https://docker-0.unsee.tech",
-    "https://docker.367231.xyz",
     "https://lispy.org",
+    "https://docker-0.unsee.tech",
     "https://docker-mirror.aigc2d.com"
   ],
   "features": {

@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2025-10-25 03:00:20)
+🚀 自动生成的镜像源速度排行榜 (更新于 2025-10-26 03:00:24)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,17 +10,17 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `lispy.org` | 4.57 MB/s |
-| 2 | `hub.docker.lunatic.icu` | 4.11 MB/s |
-| 3 | `docker-mirror.aigc2d.com` | 1.00 MB/s |
+| 1 | `hub.docker.lunatic.icu` | 4.05 MB/s |
+| 2 | `lispy.org` | 2.89 MB/s |
+| 3 | `docker-mirror.aigc2d.com` | 0.78 MB/s |
 
 ## 配置
 
 ```json
 {
   "registry-mirrors": [
-    "https://lispy.org",
     "https://hub.docker.lunatic.icu",
+    "https://lispy.org",
     "https://docker-mirror.aigc2d.com"
   ],
   "features": {

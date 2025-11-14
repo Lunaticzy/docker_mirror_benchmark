@@ -1,7 +1,5 @@
 {
   "registry-mirrors": [
-    "https://lispy.org",
-    "https://docker.367231.xyz",
     "https://hub.docker.lunatic.icu",
     "https://docker-mirror.aigc2d.com"
   ],

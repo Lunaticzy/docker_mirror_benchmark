@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2025-11-20 03:00:17)
+🚀 自动生成的镜像源速度排行榜 (更新于 2025-11-21 03:00:36)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,14 +10,16 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `hub.docker.lunatic.icu` | 3.89 MB/s |
+| 1 | `hub.docker.lunatic.icu` | 4.30 MB/s |
+| 2 | `docker-mirror.aigc2d.com` | 0.42 MB/s |
 
 ## 配置
 
 ```json
 {
   "registry-mirrors": [
-    "https://hub.docker.lunatic.icu"
+    "https://hub.docker.lunatic.icu",
+    "https://docker-mirror.aigc2d.com"
   ],
   "features": {
     "buildkit": true

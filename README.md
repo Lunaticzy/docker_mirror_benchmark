@@ -1,6 +1,6 @@
 # Docker Mirror Benchmark
 
-🚀 自动生成的镜像源速度排行榜 (更新于 2026-01-15 03:00:15)
+🚀 自动生成的镜像源速度排行榜 (更新于 2026-01-16 03:00:21)
 
 ## 测试镜像
 - 镜像名称: `library/nginx:latest`
@@ -10,8 +10,9 @@
 ## 速度排行榜
 | 排名 | 镜像源地址 | 平均下载速度 |
 |------|------------|--------------|
-| 1 | `docker.1panel.live` | 5.00 MB/s |
-| 2 | `hub.docker.lunatic.icu` | 2.74 MB/s |
+| 1 | `docker.1panel.live` | 3.59 MB/s |
+| 2 | `hub.docker.lunatic.icu` | 2.21 MB/s |
+| 3 | `docker.xuanyuan.me` | 1.17 MB/s |
 
 ## 配置
 
@@ -19,7 +20,8 @@
 {
   "registry-mirrors": [
     "https://docker.1panel.live",
-    "https://hub.docker.lunatic.icu"
+    "https://hub.docker.lunatic.icu",
+    "https://docker.xuanyuan.me"
   ],
   "features": {
     "buildkit": true

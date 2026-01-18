@@ -1,7 +1,8 @@
 {
   "registry-mirrors": [
     "https://hub.docker.lunatic.icu",
-    "https://docker.1panel.live"
+    "https://docker.1panel.live",
+    "https://docker.xuanyuan.me"
   ],
   "features": {
     "buildkit": true
